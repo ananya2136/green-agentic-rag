@@ -1,0 +1,52 @@
+services:
+  - type: web
+    name: green-agentic-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn src.api.main:app --host 0.0.0.0 --port $PORT
+    
+    # Environment variables (set these in Render dashboard)
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ELECTRICITY_MAPS_API_KEY
+        sync: false
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: LARGE_MODEL_NAME
+        value: llama-3.1-8b-instant
+      - key: MEDIUM_MODEL_NAME
+        value: llama-3.1-8b-instant
+      - key: LIGHT_MODEL_REPO
+        value: sshleifer/distilbart-cnn-12-6
+      - key: CHECKER_MODEL_REPO
+        value: Moritz/robert-base-c-fact-all
+      - key: EMBEDDING_MODEL_REPO
+        value: sentence-transformers/all-MiniLM-L6-v2
+      - key: DATABASE_URL
+        value: sqlite:////opt/render/project/data/agentic_db.sqlite
+      - key: VECTOR_DB_PATH
+        value: /opt/render/project/data/chroma
+      - key: BASELINE_GRID_INTENSITY
+        value: 450.0
+      - key: LOCAL_GRID_INTENSITY
+        value: 700.0
+      - key: TRIAGE_STRATEGY
+        value: fast
+      - key: JWT_ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 1440
+      - key: USE_OLLAMA
+        value: false
+    
+    # Persistent disk for SQLite database
+    disk:
+      name: data
+      mountPath: /opt/render/project/data
+      sizeGB: 1
+    
+    # Health check
+    healthCheckPath: /

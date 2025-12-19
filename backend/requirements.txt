@@ -1,0 +1,31 @@
+# === FastAPI Server ===
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic-settings
+python-multipart  # For file uploads
+requests          # For calling carbon APIs
+
+# === Authentication ===
+passlib[bcrypt]   # Password hashing
+python-jose[cryptography]  # JWT tokens
+
+# === Database (Local, File-Based) ===
+sqlalchemy        # ORM for SQLite
+chromadb          # File-based vector database
+
+# === Agentic Core ===
+langgraph         # The "Brain" / Orchestrator
+
+# === AI Agents (Local) ===
+transformers
+torch
+sentence-transformers  # For Embedding Agent
+ollama                 # For Medium LLM
+
+# === AI Agents (Cloud) ===
+groq
+
+# === Triage Agent (Visual Document Parsing) ===
+unstructured[all-docs] 
+PyPDF2
