@@ -387,7 +387,7 @@ Full API documentation available at: `http://localhost:8000/docs`
 
 ---
 
-## 📄 Dependencies
+## Dependencies
 
 ### Backend Dependencies
 
