@@ -2,7 +2,7 @@
 
 A production-ready intelligent document processing system with carbon-aware computing, speculative RAG, and full authentication. Built with FastAPI, Next.js, and AI-powered agents for sustainable, efficient document summarization.
 
-## 🌟 Features
+## Features
 
 - **Authentication System**: Secure JWT-based authentication with bcrypt password hashing
 - **Intelligent Document Processing**: Multi-agent system for document summarization
