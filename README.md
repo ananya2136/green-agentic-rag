@@ -4,16 +4,16 @@ A production-ready intelligent document processing system with carbon-aware comp
 
 ## 🌟 Features
 
-- **🔐 Authentication System**: Secure JWT-based authentication with bcrypt password hashing
-- **📄 Intelligent Document Processing**: Multi-agent system for document summarization
-- **🌱 Carbon-Aware Computing**: Optimizes model selection based on grid carbon intensity
-- **🤖 Speculative RAG**: Efficient retrieval-augmented generation with draft-verify architecture
-- **📊 Real-time Dashboard**: Monitor processing metrics, carbon savings, and efficiency
-- **🎨 Modern UI**: Beautiful glassmorphism design with dark mode support
+- **Authentication System**: Secure JWT-based authentication with bcrypt password hashing
+- **Intelligent Document Processing**: Multi-agent system for document summarization
+- **Carbon-Aware Computing**: Optimizes model selection based on grid carbon intensity
+- **Speculative RAG**: Efficient retrieval-augmented generation with draft-verify architecture
+- **Real-time Dashboard**: Monitor processing metrics, carbon savings, and efficiency
+- **Modern UI**: Beautiful glassmorphism design with dark mode support
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Architecture](#architecture)
@@ -28,7 +28,7 @@ A production-ready intelligent document processing system with carbon-aware comp
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This system processes documents (PDFs, text files) through an intelligent multi-agent pipeline that:
 
@@ -51,7 +51,7 @@ This system processes documents (PDFs, text files) through an intelligent multi-
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### System Architecture
 
@@ -100,7 +100,7 @@ This system processes documents (PDFs, text files) through an intelligent multi-
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 ### Required Software
 
@@ -165,7 +165,7 @@ ollama pull gemma:2b
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### Backend (.env)
 
@@ -209,7 +209,7 @@ No additional environment variables required. API endpoint is configured to `htt
 
 ---
 
-## 💻 Running Locally
+## Running Locally
 
 ### Start Backend Server
 
