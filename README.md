@@ -1,19 +1,19 @@
-# Sustainability Manager - Green Agentic Document Processing System
+Agentic Document Processing System
 
 A production-ready intelligent document processing system with carbon-aware computing, speculative RAG, and full authentication. Built with FastAPI, Next.js, and AI-powered agents for sustainable, efficient document summarization.
 
-## 🌟 Features
+## Features
 
-- **🔐 Authentication System**: Secure JWT-based authentication with bcrypt password hashing
-- **📄 Intelligent Document Processing**: Multi-agent system for document summarization
-- **🌱 Carbon-Aware Computing**: Optimizes model selection based on grid carbon intensity
-- **🤖 Speculative RAG**: Efficient retrieval-augmented generation with draft-verify architecture
-- **📊 Real-time Dashboard**: Monitor processing metrics, carbon savings, and efficiency
-- **🎨 Modern UI**: Beautiful glassmorphism design with dark mode support
+- **Authentication System**: Secure JWT-based authentication with bcrypt password hashing
+- **Intelligent Document Processing**: Multi-agent system for document summarization
+- **Carbon-Aware Computing**: Optimizes model selection based on grid carbon intensity
+- **Speculative RAG**: Efficient retrieval-augmented generation with draft-verify architecture
+- **Real-time Dashboard**: Monitor processing metrics, carbon savings, and efficiency
+- **Modern UI**: Beautiful glassmorphism design with dark mode support
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Architecture](#architecture)
@@ -28,7 +28,7 @@ A production-ready intelligent document processing system with carbon-aware comp
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This system processes documents (PDFs, text files) through an intelligent multi-agent pipeline that:
 
@@ -51,7 +51,7 @@ This system processes documents (PDFs, text files) through an intelligent multi-
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### System Architecture
 
@@ -100,7 +100,7 @@ This system processes documents (PDFs, text files) through an intelligent multi-
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 ### Required Software
 
@@ -116,7 +116,7 @@ This system processes documents (PDFs, text files) through an intelligent multi-
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -165,7 +165,7 @@ ollama pull gemma:2b
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### Backend (.env)
 
@@ -209,7 +209,7 @@ No additional environment variables required. API endpoint is configured to `htt
 
 ---
 
-## 💻 Running Locally
+## Running Locally
 
 ### Start Backend Server
 
@@ -244,7 +244,7 @@ Frontend will be available at: `http://localhost:3000`
 
 ---
 
-## ☁️ Running on Cloud
+## Running on Cloud
 
 ### Backend Deployment (Railway, Render, Fly.io)
 
@@ -275,7 +275,7 @@ Frontend will be available at: `http://localhost:3000`
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 
@@ -362,7 +362,7 @@ Full API documentation available at: `http://localhost:8000/docs`
 
 ---
 
-## ⚠️ Known Issues and Limitations
+## Known Issues and Limitations
 
 ### Current Limitations
 
@@ -422,44 +422,6 @@ See [`frontend/package.json`](frontend/package.json):
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
 ---
 
-## 📝 License
 
-[Add your license here]
-
----
-
-## 👥 Authors
-
-[Add author information]
-
----
-
-## 🙏 Acknowledgments
-
-- Groq for fast LLM inference
-- Ollama for local model serving
-- Hugging Face for model hosting
-- Electricity Maps for carbon intensity data
-
----
-
-## 📞 Support
-
-For issues and questions:
-- Create an issue on GitHub
-- Contact: [your-email@example.com]
-
----
-
-**Built with ❤️ for a sustainable future**

@@ -2,7 +2,6 @@ import logging
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
 from sentence_transformers import SentenceTransformer
 import ollama
-import google.generativeai as genai
 from groq import Groq
 from typing import List, Dict, Any, Optional
 import torch
