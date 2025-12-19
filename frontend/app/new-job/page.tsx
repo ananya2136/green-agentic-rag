@@ -8,6 +8,7 @@ import { TopBar } from "@/components/top-bar"
 import { UploadZone } from "@/components/upload-zone"
 import { StrategySelector } from "@/components/strategy-selector"
 import { Card } from "@/components/ui/card"
+import { API_BASE_URL } from "@/config"
 
 export default function NewJobPage() {
   const router = useRouter()
@@ -43,7 +44,7 @@ export default function NewJobPage() {
       let backendMode = strategy
       if (strategy === 'quality') backendMode = 'max quality' // Adjust if needed
 
-      const response = await fetch(`http://localhost:8000/summarize?mode=${backendMode}`, {
+      const response = await fetch(`${API_BASE_URL}/summarize?mode=${backendMode}`, {
         method: "POST",
         body: formData,
       })

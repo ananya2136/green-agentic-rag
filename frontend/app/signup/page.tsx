@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Loader2, Lock, Mail, User, Zap, Check, X } from "lucide-react"
 import Link from "next/link"
+import { API_BASE_URL } from "@/config"
 
 export default function SignupPage() {
     const router = useRouter()
@@ -45,7 +46,7 @@ export default function SignupPage() {
         setLoading(true)
 
         try {
-            const response = await fetch("http://localhost:8000/auth/register", {
+            const response = await fetch(`${API_BASE_URL}/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

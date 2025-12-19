@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Loader2, Lock, Mail, Zap } from "lucide-react"
 import Link from "next/link"
+import { API_BASE_URL } from "@/config"
 
 export default function LoginPage() {
     const router = useRouter()
@@ -23,7 +24,7 @@ export default function LoginPage() {
         setLoading(true)
 
         try {
-            const response = await fetch("http://localhost:8000/auth/login", {
+            const response = await fetch(`${API_BASE_URL}/auth/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

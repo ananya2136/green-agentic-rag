@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Leaf, Zap, Star, Copy, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { API_BASE_URL } from "@/config"
 
 // Types for backend data
 interface JobStatus {
@@ -61,7 +62,7 @@ function ResultsContent() {
 
     const pollStatus = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/job-status/${jobId}`)
+        const response = await fetch(`${API_BASE_URL}/job-status/${jobId}`)
         if (response.ok) {
           const data: JobStatus = await response.json()
 
@@ -100,7 +101,7 @@ function ResultsContent() {
 
   const fetchResult = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/job-result/${jobId}`)
+      const response = await fetch(`${API_BASE_URL}/job-result/${jobId}`)
       if (response.ok) {
         const data: JobResult = await response.json()
         setResult(data)
@@ -143,7 +144,7 @@ function ResultsContent() {
     setIsChatLoading(true)
 
     try {
-      const response = await fetch("http://localhost:8000/rag-query", {
+      const response = await fetch(`${API_BASE_URL}/rag-query`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

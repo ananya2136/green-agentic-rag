@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Sidebar } from "@/components/sidebar"
 import { TopBar } from "@/components/top-bar"
+import { API_BASE_URL } from "@/config"
 import { KPICard } from "@/components/kpi-card"
 import { ChartCard } from "@/components/chart-card"
 import { DocumentHistory } from "@/components/document-history"
@@ -48,7 +49,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await fetch("http://localhost:8000/dashboard-stats")
+        const res = await fetch(`${API_BASE_URL}/dashboard-stats`)
         if (res.ok) {
           const data = await res.json()
           setStats(data)

@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { FileText, Download, Clock } from "lucide-react"
+import { API_BASE_URL } from "@/config"
 
 interface Document {
     document_id: str
@@ -21,7 +22,7 @@ export function DocumentHistory() {
 
     const fetchDocuments = async () => {
         try {
-            const res = await fetch("http://localhost:8000/documents")
+            const res = await fetch(`${API_BASE_URL}/documents`)
             if (res.ok) {
                 const data = await res.json()
                 setDocuments(data)
