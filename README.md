@@ -205,7 +205,7 @@ JWT_ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=1440
 ```
 
-### Frontend
+## Frontend
 
 frontend/
 ├── app/          # Next.js App Router
@@ -213,33 +213,33 @@ frontend/
 ├── signup/
 ├── dashboard/    # Main dashboard
 ├── new-job/      # Document upload
- └── results/     # Processing results
+├── results/      # Processing results
 ├── components/
 ├── ui/           # Radix UI components
 ├── document-history/   # History viewer
-├── upload-zone/    # File upload
- └── strategy-selector/    # Mode selection
- └── lib/         # Utilities
+├── upload-zone/        # File upload
+├── strategy-selector/ # Mode selection
+└── lib/               # Utilities
 
-### Backend Architecture
+## Backend Architecture
 
-Backend Architecture 
 backend/
 ├── src/
-│ ├── api/            # FastAPI routes
-│ │ ├── main.py       # Server & endpoints
-│ │ ├── auth.py       # JWT utilities
-│ │ └── schemas.py    # Pydantic models
-│ ├── core/           # Business logic
-│ │ ├── orchestrator.py  # LangGraph
-│ │ └── config.py     # Settings
-│ ├── agents/         # AI agents
-│ │ └── models.py     # Model management
-│ ├── carbon_router/  # Carbon logic
-│ ├── memory/         # Data persistence
-│ │ └── storage.py    # DB operations
-│ └── monitoring/     # Metrics
-└── local_db/         # Database
+│   ├── api/            # FastAPI routes
+│   │   ├── main.py     # Server & endpoints
+│   │   ├── auth.py     # JWT utilities
+│   │   └── schemas.py  # Pydantic models
+│   ├── core/           # Business logic
+│   │   ├── orchestrator.py  # LangGraph
+│   │   └── config.py        # Settings
+│   ├── agents/         # AI agents
+│   │   └── models.py   # Model management
+│   ├── carbon_router/  # Carbon logic
+│   ├── memory/         # Data persistence
+│   │   └── storage.py  # DB operations
+│   └── monitoring/     # Metrics
+└── local_db/           # Database
+
 
 No additional environment variables required. API endpoint is configured to `http://localhost:8000`.
 
