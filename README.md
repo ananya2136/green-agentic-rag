@@ -238,10 +238,8 @@ Frontend will be available at: `http://localhost:3000`
 ### Access the Application
 
 1. **Homepage**: `http://localhost:3000`
-2. **Signup**: `http://localhost:3000/signup`
-3. **Login**: `http://localhost:3000/login`
-4. **Dashboard**: `http://localhost:3000/dashboard`
-5. **New Job**: `http://localhost:3000/new-job`
+2. **Dashboard**: `http://localhost:3000/dashboard`
+3. **New Job**: `http://localhost:3000/new-job`
 
 ---
 
