@@ -108,6 +108,7 @@ This system processes documents (PDFs, text files) through an intelligent multi-
 - **Node.js**: 18.x or higher
 - **npm/pnpm**: Latest version
 - **Ollama**: For local Gemma 2B model (optional but recommended)
+- **Next.js**: 14.x or higher
 
 ### API Keys
 
