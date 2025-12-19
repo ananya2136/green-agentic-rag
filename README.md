@@ -97,6 +97,8 @@ This system processes documents (PDFs, text files) through an intelligent multi-
 4. **Reduce Agent**: Compiles final summary from chunk summaries
 5. **Storage Agent**: Saves to database and generates embeddings
 
+### Frontend Directory Structure
+
 ---
 
 ## Prerequisites
@@ -204,6 +206,40 @@ ACCESS_TOKEN_EXPIRE_MINUTES=1440
 ```
 
 ### Frontend
+
+frontend/
+├── app/          # Next.js App Router
+├── login/        # Authentication pages
+├── signup/
+├── dashboard/    # Main dashboard
+├── new-job/      # Document upload
+ └── results/     # Processing results
+├── components/
+├── ui/           # Radix UI components
+├── document-history/   # History viewer
+├── upload-zone/    # File upload
+ └── strategy-selector/    # Mode selection
+ └── lib/         # Utilities
+
+### Backend Architecture
+
+Backend Architecture 
+backend/
+├── src/
+│ ├── api/            # FastAPI routes
+│ │ ├── main.py       # Server & endpoints
+│ │ ├── auth.py       # JWT utilities
+│ │ └── schemas.py    # Pydantic models
+│ ├── core/           # Business logic
+│ │ ├── orchestrator.py  # LangGraph
+│ │ └── config.py     # Settings
+│ ├── agents/         # AI agents
+│ │ └── models.py     # Model management
+│ ├── carbon_router/  # Carbon logic
+│ ├── memory/         # Data persistence
+│ │ └── storage.py    # DB operations
+│ └── monitoring/     # Metrics
+└── local_db/         # Database
 
 No additional environment variables required. API endpoint is configured to `http://localhost:8000`.
 
