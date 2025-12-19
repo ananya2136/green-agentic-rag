@@ -116,7 +116,7 @@ This system processes documents (PDFs, text files) through an intelligent multi-
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -244,7 +244,7 @@ Frontend will be available at: `http://localhost:3000`
 
 ---
 
-## ☁️ Running on Cloud
+## Running on Cloud
 
 ### Backend Deployment (Railway, Render, Fly.io)
 
@@ -275,7 +275,7 @@ Frontend will be available at: `http://localhost:3000`
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 
@@ -362,7 +362,7 @@ Full API documentation available at: `http://localhost:8000/docs`
 
 ---
 
-## ⚠️ Known Issues and Limitations
+## Known Issues and Limitations
 
 ### Current Limitations
 
