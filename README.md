@@ -422,44 +422,6 @@ See [`frontend/package.json`](frontend/package.json):
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
 ---
 
-## 📝 License
 
-[Add your license here]
-
----
-
-## 👥 Authors
-
-[Add author information]
-
----
-
-## 🙏 Acknowledgments
-
-- Groq for fast LLM inference
-- Ollama for local model serving
-- Hugging Face for model hosting
-- Electricity Maps for carbon intensity data
-
----
-
-## 📞 Support
-
-For issues and questions:
-- Create an issue on GitHub
-- Contact: [your-email@example.com]
-
----
-
-**Built with ❤️ for a sustainable future**
